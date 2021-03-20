@@ -1,8 +1,14 @@
 <?php defined('ABSPATH') || exit;
 
+/**
+ * Class jk_wp_post_views
+ */
 class jk_wp_post_views
 {
 
+    /**
+     * @param $post_id
+     */
     public static function the_views($post_id)
     {
 
@@ -12,6 +18,10 @@ class jk_wp_post_views
 
     }
 
+    /**
+     * @param $post_id
+     * @param $user_id
+     */
     public static function ajax_handler($post_id, $user_id)
     {
 
@@ -45,6 +55,9 @@ class jk_wp_post_views
 
     }
 
+    /**
+     *
+     */
     public function ajax_init()
     {
 
